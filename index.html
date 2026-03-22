@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="الوثائق الرسمية الخاصة بمنصة وين أون بوكر." />
+<title>وين أون بوكر – الوثائق الرسمية</title>
+
+<link rel="icon" type="image/png" href="winon logo.png" />
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+:root{
+  --green:#1E755A;
+  --gold:#FFD700;
+  --black:#000;
+  --dark:#111;
+  --white:#fff;
+}
+
+/* BODY */
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:Arial, Helvetica, sans-serif;
+  background:var(--green);
+  color:#fff;
+  padding:12px;
+  position:relative;
+  overflow-x:hidden;
+}
+
+/* BACKGROUND GLOW */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:radial-gradient(circle at center, rgba(255,215,0,0.2) 0%, transparent 50%);
+  pointer-events:none;
+}
+
+/* CONTAINER */
+.container{
+  position:relative;
+  width:90%;
+  max-width:520px;
+  padding:40px 30px;
+  background:var(--green);
+  border:3px solid var(--gold);
+  border-radius:16px;
+  text-align:center;
+  box-shadow:
+    0 0 25px rgba(255,215,0,0.4),
+    0 0 60px rgba(255,215,0,0.15);
+}
+
+/* OUTER BORDER */
+.container::before{
+  content:"";
+  position:absolute;
+  top:-8px;
+  left:-8px;
+  right:-8px;
+  bottom:-8px;
+  border:2px solid rgba(255,255,255,0.2);
+  border-radius:20px;
+  pointer-events:none;
+}
+
+/* LOGO */
+.logo{
+  width:100%;
+  max-width:200px;
+  margin:0 auto 25px;
+  display:block;
+  filter:drop-shadow(0 0 10px rgba(255,215,0,0.6));
+}
+
+/* TITLE */
+h1{
+  margin:0 0 10px;
+  font-size:26px;
+  color:var(--gold);
+}
+
+/* DESCRIPTION */
+p{
+  margin:0 0 25px;
+  font-size:14px;
+  opacity:0.9;
+}
+
+/* BUTTONS */
+.doc-link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:100%;
+  padding:14px;
+  margin-bottom:14px;
+  background:transparent;
+  border:2px solid var(--gold);
+  border-radius:12px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  transition:all .25s ease;
+}
+
+/* HOVER */
+.doc-link:hover{
+  background:var(--gold);
+  color:#000;
+  box-shadow:0 0 15px rgba(255,215,0,0.8);
+  transform:translateY(-2px);
+}
+
+/* FOOTER */
+.footer{
+  margin-top:20px;
+  font-size:12px;
+  opacity:.7;
+}
+
+/* MOBILE */
+@media (max-width:480px){
+  .container{
+    padding:25px 15px;
+  }
+
+  h1{
+    font-size:22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <img src="winon logo.png" alt="Winon Poker Logo" class="logo">
+
+  <h1>وين أون بوكر – الوثائق الرسمية</h1>
+
+  <p>الوثائق القانونية الرسمية الخاصة بالمنصة</p>
+
+  <a class="doc-link" href="Winon_Poker_Terms_and_Conditions.pdf" target="_blank">
+    📄 الشروط والأحكام
+  </a>
+
+  <a class="doc-link" href="Winon_Poker_Privacy_Policy.pdf" target="_blank">
+    🔒 سياسة الخصوصية
+  </a>
+
+  <a class="doc-link" href="Winon_Poker_Responsible_Play.pdf" target="_blank">
+    ⚠ سياسة الاستخدام المسؤول
+  </a>
+
+  <div class="footer">
+    © 2026 وين أون بوكر. جميع الحقوق محفوظة
+  </div>
+
+</div>
+
+</body>
+</html>
